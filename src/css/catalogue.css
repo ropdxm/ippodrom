@@ -1,0 +1,101 @@
+:root {
+    --orange-button: #EE9207;
+    --gray-minus: #484848;
+}
+
+.cat-intro-s {
+    position: relative;
+    height: 70vh;
+}
+.cat-horse-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.brown-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(73, 44, 0, 0.45);
+}
+.cat-fh {
+    font-size: 5rem;
+    text-align: center;
+}
+.cat-sh {
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: .1rem;
+}
+.texts-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    height: 70%;
+}
+.horse-catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    row-gap: 6rem;
+}
+.horse-card {
+    width: 35rem;
+    height: 43rem;
+    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.horse-title {
+    font-size: 3rem;
+}
+.horse-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+.horse-description {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.horse-wrappper {
+    width: 70%;
+}
+.horse-inp {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--orange-button);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.horse-inp:hover {
+    background-color: white;
+    color: var(--orange-button);
+    outline: .1rem solid var(--orange-button);
+    transition: .4s;
+}

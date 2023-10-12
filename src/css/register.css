@@ -1,0 +1,135 @@
+:root {
+    --orange: #F0A83D;
+    --gray: #646262;
+    --inputw: 60%;
+}
+
+.register-title {
+    color: var(--orange);
+    text-align: center;
+    font-size: 4.6rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.eight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 2rem;
+}
+.one-of-eight {
+    flex: 1 0 21%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 1rem !important;
+    align-items: center;
+}
+.register-fs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.inp, .inp:focus, .inp:hover {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;;
+    font-size: 1.6rem;  
+}
+.inp:focus {
+    outline: .1rem solid black;
+}
+.inp:invalid {
+    outline: .1rem red solid;
+    transition: .3s;
+}
+.inp-box {
+    width: var(--inputw);
+}
+.rflabel {
+    font-size: 1.9rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+.rflabel-wrapper {
+    width: var(--inputw);
+}
+.reg-img {
+    flex: 0 0 50%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.register-form {
+    flex: 0 0 50%;
+    width: 70%;
+}
+.create-account-b, .create-account-b:hover, .create-account-b:active {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-d {
+    width: var(--inputw);
+    margin-top: .6rem;
+}
+.create-account-b {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    background-color: var(--gray);
+    color: white;
+}
+.create-account-b:hover {
+    background-color: white;
+    color: var(--gray);
+    outline: .2rem solid var(--gray);
+    transition: .5s;
+}
+.not-reg-d {
+    display: flex;
+    justify-content: center;
+}
+.not-reg-text {
+    font-size: 1.6rem;
+}
+.not-reg-text > a {
+    text-decoration: underline;
+    color: black;
+    margin-left: .6rem;
+    text-underline-offset: .5rem;
+}
+.not-reg-text > a:hover {
+    color: var(--gray);
+    transition: .5s;
+}
+
+.error-message-reg {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.error-message-reg > h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: red;
+    width: 60%;
+    padding-left: 1rem;
+}

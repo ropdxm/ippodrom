@@ -1,0 +1,131 @@
+.lx-row > .title {
+    font-size: 3rem;
+}
+.lx-row {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+.has-dflex-center {
+    padding: 2rem 0;
+}
+.has-dflex-center section {
+    width: 100%;
+}
+.has-dflex-center section form {
+    min-width: 15rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+.lx-column {
+    display: flex;
+    justify-content: center;
+}
+.has-dflex-center section form .fieldset {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.has-dflex-center section form .fieldset label {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.has-dflex-center section form .fieldset .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.lx-column input {
+    outline: none;
+    border: none;
+}
+.has-dflex-center section form .fieldset .input-wrapper .icon {
+    width: fit-content;
+    margin: 0;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.0625rem solid #ced4da;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+}
+.has-dflex-center section form .fieldset .input-wrapper input, .has-dflex-center section form .fieldset .input-wrapper select {
+    flex-grow: 1;
+    padding: 1rem 1.2rem;
+    display: block;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    border: 0.0625rem solid #ced4da;
+    border-left: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+.has-dflex-center section form .fieldset .input-wrapper:focus .icon, .has-dflex-center section form .fieldset .input-wrapper:focus-within .icon, .has-dflex-center section form .fieldset .input-wrapper:hover .icon {
+    color: var(--orange);
+}
+.has-dflex-center section form .fieldset:first-child {
+    margin-top: 0;
+}
+.has-dflex-center section form .fieldset:last-child {
+    margin-bottom: 0;
+}
+.has-dflex-center section form .actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.has-dflex-center section form .actions .lx-btn {
+    padding: 1rem 2rem;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: white;
+}
+.lx-btn > form {
+    align-items: center;
+}
+.has-dflex-center section form .actions .lx-btn#save, .has-dflex-center section form .actions .lx-btn#save {
+    background-color: var(--orange);
+}
+.actions > .lx-btn#save:hover {
+    color: var(--orange);
+    background-color: white !important;
+    outline: .1rem solid var(--orange);
+    transition: .3s;
+}
+@media screen and (max-width: 64rem) {
+    .has-dflex-center section .profile-pic {
+        max-width: 100%;
+        margin: 0;
+   }
+}
+@media screen and (max-width: 56.25rem) {
+    .has-dflex-center section form {
+        max-width: 100%;
+        margin: 0;
+   }
+}

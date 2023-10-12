@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.f-insta {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+}
+.footer-s {
+    display: flex;
+    gap: 5rem;
+}

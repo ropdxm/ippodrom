@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    height: 6.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, a, span {
+    font-family: 'Inter';
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+@media (max-width: 720px) {
+  :root {
+    --inputw: 80% !important;
+  }
+  main {
+    margin-top: 6rem;
+  }
+  .order-inp {
+    min-width: 50%;
+  }
+  .item-order {
+    gap: 2rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+  .list-of-orders {
+    gap: 4rem !important;
+  }
+  .cat-intro-s {
+    height: 50vh !important;
+  }
+  .horse-home {
+    height: 80vh;
+  }
+  .reg-img {
+    display: none;
+  }
+  .register-form {
+    flex: 0 0 100% !important;
+  }
+  .eight {
+    column-gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+  
+  html {
+    font-size: 42.5%;
+  }
+  .two-buttons {
+    flex-direction: column;
+  }
+  .horse-block {
+    width: 80%;
+  }
+  .h-ippodrom {
+    font-size: 7rem;
+  }
+  .text-section-s {
+    width: 70%;
+  }
+  .cat-intro-s {
+    height: 45vh !important;
+  }
+}
+@media (max-width: 350px) {
+    html {
+        font-size: 38%;
+    }
+    .footer-s {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+    footer {
+        padding-bottom: 10rem;
+    }
+    .cat-sh {
+      width: 80% !important;
+    }
+    .cat-intro-s {
+      height: 35vh !important;
+    }
+}
